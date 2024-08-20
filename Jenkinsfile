@@ -15,6 +15,12 @@ pipeline {
             }
         }
         
+        stage('TestWebHook') {
+            steps {
+                sh 'echo Testing Web Hook'
+            }
+        }
+        
         stage('Deploy') {
             steps {
                 sh 'echo Deploying AWS'
