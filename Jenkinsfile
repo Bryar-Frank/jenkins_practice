@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Testing 2'){
             steps{
-                sh "echo Testing 2 test"                
+                sh "echo Testing 2"                
             }
         }
         stage('Testing 3'){
