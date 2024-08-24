@@ -64,3 +64,32 @@ pipeline {
         //         }   
         //     }
         // }
+
+//docker build -t myjenkins-blueocean .
+//docker network create jenkins
+
+//CREATES JENKINS DOCKER CONTAINER ON PORT 8080
+//docker run --name jenkins --restart=on-failure --detach `
+//--network jenkins `
+//--volume /var/run/docker.sock:/var/run/docker.sock `
+//--volume jenkins-data:/var/jenkins_home `
+//--publish 8080:8080 --publish 50000:50000 myjenkins-blueocean
+
+//ngrok http 8080  <--sets up port 8080 for us to access jenkins locally
+
+//aws configure
+//AWS Access KEY ID
+//ASW Secret Access Key
+//Default Region Name (us-east-1)
+//Default output format (json)
+
+
+//aws elasticbeanstalk create-application-version `
+//--application-name simple-sort-app `
+//--version-label v1.0.1 `
+//--source-bundle S3Bucket=simple-sort-app,S3Key=inventory-manager-1.0.1-SNAPSHOT.jar 
+
+//aws elasticbeanstalk update-environment `
+//--application-name simple-sort-app `
+//--environment-name simple-sort-app-env `
+//--version-label v1.0.1
